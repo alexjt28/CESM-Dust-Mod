@@ -1,4 +1,4 @@
-This set of instructions/code shows you how to modify CESM to allow dust to mobilize regardless of the model's vegetation. In CLM4, dust is not mobilized if a grid cell's leaf+stem area index exceeds 0.3. This setup will bypass that requirement and allow dust to mobilize according to a separate vegetational setup.
+This set of instructions/code shows you how to modify CESM to allow dust to mobilize regardless of the model's vegetation. In CLM4, dust is not mobilized if a grid cell's leaf+stem area index exceeds 0.3. This setup will bypass that requirement and allow dust to mobilize according to a separate vegetational setup (case2).
 
 Step 1: Define the two vegetational setups according to your needs. One (case1) will be the vegetation for the base simulation. Another (case2) will be the vegetation that the dust model uses when determining dust mobilization.
 Step 2: Run each simulation (case1 and case2) for 12 months and create CLM restart files for each month (ex. case1.clm2.r.0001-02-01.nc).
